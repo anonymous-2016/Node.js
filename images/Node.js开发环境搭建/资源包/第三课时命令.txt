@@ -1,0 +1,19 @@
+﻿3，Windows下Node.js开发环境的搭建
+//编辑网卡配置
+vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
+//重启虚拟机网络
+systemctl restart network
+//安装epel
+yum install epel-release
+//安装Node.js
+yum install nodejs
+//检查node是否成功安装，查看一下node的版本号
+node --version
+//安装MongoDB
+yum install mongodb
+//查看一下mongodb客户端的版本号
+mongo --version
+//安装redis
+yum install redis
+//查看一下redis客户端的版本号
+redis-cli --version

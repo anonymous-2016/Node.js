@@ -1,0 +1,15 @@
+2、Mac OS X下Node.js开发环境的搭建
+//homebrew安装
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+//node.js安装
+brew install nodejs
+//查看node版本
+node --version
+//mongodb安装
+brew install mongodb
+//查看mongo客户端版本
+mongo --version
+//redis安装
+brew install redis
+//查看redis客户端redis-cli的版本
+redis-cli --version
