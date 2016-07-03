@@ -1,0 +1,1 @@
+@node "D:\nodejs\project01\lib\node-echo.js" %*

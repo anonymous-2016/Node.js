@@ -1,0 +1,15 @@
+/*node.js test*/
+var clc = require('cli-color');
+function xfunction(){
+console.log(clc.green.bgWhite('*********************************'));
+console.log(('*************************************************'));
+console.log(('*************************************************'));
+
+console.log(('*************************************************'));
+}
+//execute
+xfunction();
+/*
+//JSON (JavaScript Object Notation)
+
+*/
