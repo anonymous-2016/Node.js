@@ -1,0 +1,5 @@
+/* package.json */
+{
+    "name": "node-app",
+    "main": "./lib/app.js"
+}
