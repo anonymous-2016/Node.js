@@ -3,9 +3,13 @@
 ## package.json
 ```json
 
+npm install --save-dev gulp gulp-sass gulp-if gulp-uglify gulp-jade 
 
+npm install --save-dev gulp-connect gulp-browserify
 
-npm install browser-sync gulp express connect --save-dev
+npm install --save-dev browser-sync
+
+npm install --save-dev express connect
 
 npm install --save-dev browserify uglify babel?
 
