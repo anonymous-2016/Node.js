@@ -7,10 +7,12 @@
 
 npm install browser-sync gulp express connect --save-dev
 
-
+npm install --save-dev browserify uglify babel?
 
 ``` 
+> [https://www.browsersync.io/docs/gulp](https://www.browsersync.io/docs/gulp)
 
+> []()
 
 
 
@@ -40,29 +42,29 @@ $ npm install browser-sync gulp --save-dev
 ``` 
 ## gulpfile.js
 ```js
-	var gulp = require('gulp');
-	var browserSync = require('browser-sync').create();
-	//
-	var sass = require('gulp-sass');
+    var gulp = require('gulp');
+    var browserSync = require('browser-sync').create();
+    //
+    var sass = require('gulp-sass');
 
-	// Static Server
-	gulp.task('browser-sync', function() {
-	    browserSync.init({
-	        server: {
-	            baseDir: "./"
-	        }
-	    });
+    // Static Server
+    gulp.task('browser-sync', function() {
+        browserSync.init({
+            server: {
+                baseDir: "./"
+            }
+        });
     });
 
     // Static Server + watching scss/html files
-    gulp.task('browser-sync', function() {
+    gulp.task('server',['sass'], function() {
         browserSync.init({
             server: "./app"
         });
         gulp.watch("app/scss/*.scss",['sass']);
         gulp.watch("app/*.html").on('change', browserSync.reload);
     });
-    
+
     // Compile sass into CSS & auto-inject into browsers
 	gulp.task('sass', function() {
         return gulp.src("app/scss/*.scss")
