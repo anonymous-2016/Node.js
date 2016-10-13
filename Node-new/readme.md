@@ -12,9 +12,9 @@ npm install --save-dev browserify uglify babel?
 ``` 
 > [https://www.browsersync.io/docs/gulp](https://www.browsersync.io/docs/gulp)
 
-> []()
+> [https://www.browsersync.io/docs/api](https://www.browsersync.io/docs/api)
 
-
+> [https://www.browsersync.io/docs/options](https://www.browsersync.io/docs/options)
 
 
 ## connect && express (web framework)
