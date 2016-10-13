@@ -1,0 +1,23 @@
+{
+  "name": "express-demo",
+  "version": "1.0.1",
+  "description": "express-demo for new node.js",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "node.js",
+    "xgqfrms",
+    "2016"
+  ],
+  "author": "xgqfrms,webgeeker",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "connect": "^3.5.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1"
+  }
+}
