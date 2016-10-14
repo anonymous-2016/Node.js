@@ -1,4 +1,9 @@
-# Dockerizing a Node.js web app
+# zh-CN 中文翻译文档
+
+**Copyright © 2016-2050 xgqfrms. All Rights Reserved.**
+
+# Dockerizing 一个 Node.js web 应用程序
+
 
 [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
 
@@ -14,7 +19,7 @@ Docker允许你把一个应用和它的所有依赖打包成一个标准化单�
 每一个容器(container)都是一个精简到基本版本的Linux操作系统。
 镜像(image)是你加载到一个容器中的软件。
 
-## Create the Node.js app
+## 创建 Node.js 应用程序
 
 首先，创建一个新目录,所有文件将会位于其中。
 在此目录中，创建一个package.json文件，描述你的应用程序及其依赖：
