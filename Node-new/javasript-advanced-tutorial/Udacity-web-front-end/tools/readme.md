@@ -16,6 +16,10 @@ It’s used in thousands of websites, including some of those you visit daily.
 [Customize your download](http://prismjs.com/download.html)
 [langauge-xxx](http://prismjs.com/)
 
+## SyntaxHighlighter
+
+[SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/)
+
 ***
 ***
 
