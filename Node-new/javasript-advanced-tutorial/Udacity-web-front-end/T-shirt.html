@@ -7,6 +7,7 @@
     <!-- readonly -->
     <!-- add CSS here -->
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/materialize.min.css"> @import url("materialize.min.css");-->
     <style>
         /* img{
             width: 54.6px;
@@ -35,6 +36,34 @@
         <main>
             <div class="row">
                 <!-- add form here -->
+                <form id="tshirt-creation-form">
+                    <div class="row fields">
+                        <div class="field col s12 l2">
+                            <label>Color</label>
+                            <select id="tshirt-color" class="browser-default">
+                                <option value="blue">Blue</option>
+                                <option value="red">Red</option>
+                                <option value="turquoise">Turquoise</option>
+                                <option value="slate">Slate</option>
+                                <option value="yellow">Yellow</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                        <div class="field col s12 l4">
+                            <label for="shirt-name">Name</label>
+                            <input id="tshirt-name" name="shirt-name" type="text" placeholder="My Amazing Shirt">
+                        </div>
+                        <div class="field col s12 l3">
+                            <label for="price">Price</label>
+                            <input id="tshirt-price" type="number" min="0" step="any" placeholder="15.00">
+                        </div>
+                        <div class="field col s12 l3">
+                            <div class="button-container">
+                                <button class="add-button waves-effect waves-light btn">add t-shirt</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div id="tshirt-container" class="row">
                 <div class="col s12 m6 l4">
@@ -82,7 +111,7 @@
     <!-- readonly -->
     <script>
         var el = document.createElement('script');
-        el.src = 'main.js'+"?v=" + Math.random();
+        el.src = './js/main.js'+"?v=" + Math.random();
         document.getElementsByTagName('head')[0].appendChild(el); 
     </script>
     <!-- readonly -->

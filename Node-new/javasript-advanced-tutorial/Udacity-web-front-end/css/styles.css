@@ -1,46 +1,49 @@
-@import url("materialize.min.css"); // readonly
+@import url("materialize.min.css"); 
+
+/* materialize.min.css */
 
 html {
-	color: black;
+    color: black;
 }
 
 body {
-	background-color: white;
+    background-color: white;
+    background-color: orange;
 }
 
-/*
- * add .card CSS here
- */
+.card {
+    padding: 20px;
+}
 
 nav {
-	box-shadow: none;
+    box-shadow: none;
 }
 
 label {
-	color: #000;
+    color: #000;
 }
 
 span.badge {
-	padding: 2px 7px;
+    padding: 2px 7px;
 }
 
 span.badge.new {
-	font-weight: 400;
-	font-size: 1em;
-	background-color: #02B3E4;
-	border-radius: 50%;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: #02B3E4;
+    border-radius: 50%;
 }
 
 span.badge.new:after {
-	content: none;
+    content: none;
 }
 
 .material-icons {
-	font-size: 1em;
+    font-size: 1em;
 }
 
 .input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
-	height: 2.9rem;
+    height: 2.9rem;
     box-sizing: border-box;
     background: #fff;
     padding-left: 1em;
@@ -49,7 +52,7 @@ span.badge.new:after {
 }
 
 .field {
-	margin: 0.5em 0;
+    margin: 0.5em 0;
 }
 
 .button-container {
@@ -58,54 +61,54 @@ span.badge.new:after {
 }
 
 .field, .button-container {
-	height: 68px;
+    height: 68px;
 }
 
 .add-button {
-	margin-top: 10px;
-	height: 2.9rem;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	right: 0;
+    margin-top: 10px;
+    height: 2.9rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
 
 .card {
-	cursor: pointer;
-	transition: box-shadow .25s;
-	box-shadow: 0;
+    cursor: pointer;
+    transition: box-shadow .25s;
+    box-shadow: 0;
 }
 
 .card:hover {
-	transition: box-shadow .25s;
-	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .card .card-image img {
-	padding: 1em;
+    padding: 1em;
 }
 
 .card-content h3 {
-	font-size: 1.4em;
-	margin: 0.2em 0;
+    font-size: 1.4em;
+    margin: 0.2em 0;
 }
 
 .card-action .rating {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 992px) {
-	.add-button {
-		width: 100%;
-	}
+    .add-button {
+    width: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-	.rating {
-		margin-top: -1px;
-	}
+    .rating {
+        margin-top: -1px;
+    }
 
-	.rating .material-icons {
-		font-size: 1.5em;
-	}
+    .rating .material-icons {
+        font-size: 1.5em;
+    }
 }
