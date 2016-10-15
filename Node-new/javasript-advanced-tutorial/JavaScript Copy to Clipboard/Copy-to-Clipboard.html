@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <title>JavaScript Copy to Clipboard</title>
     <!-- https://davidwalsh.name/clipboard -->
+    <!-- https://clipboardjs.com/ -->
 </head>
 <body>
-    
+    <div>
+        <h1>clipboard.js</h1>
+        <p>
+            <pre>
+                A modern approach to copy text to clipboard
+
+                No Flash. No frameworks. Just 3kb gzipped
+            </pre>
+        </p>
+    </div>
+    <div>
+        /* Textarea - Cut
+        <textarea id="bar">hello</textarea>
+        <button class="copy-button" data-clipboard-action="cut" data-clipboard-target="#bar">Cut</button>
+        */
+
+        /* Input - Copy
+        <input id="foo" type="text" value="hello">
+        <button class="copy-button" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button>
+        */
+        
+    </div>
+    <script src="clipboard.min.js"></script>
+    <script>
+        var clipboard = new Clipboard('.copy-button');
+    </script>
 </body>
 </html>

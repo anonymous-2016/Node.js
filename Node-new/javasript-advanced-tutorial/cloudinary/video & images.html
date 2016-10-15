@@ -5,11 +5,56 @@
     <title>https://cloudinary.com/console/welcome</title>
     <!-- https://cloudinary.com/console/welcome -->
     <!-- http://cloudinary.com/documentation/node_integration#getting_started_guide -->
+    <!-- https://davidwalsh.name/html5-video -->
 </head>
 <body>
     <div>
         <h1>Cloudinary是一个基于云的服务,提供包括上传，存储，操作，优化和交付的端至端图像管理解决方案。</h1>
         <a href="https://davidwalsh.name/html5-video">https://davidwalsh.name/html5-video</a>
     </div>
+    <div>
+        <video width="640" height="480" poster="sample-video.jpg" controls autoplay preload style="background: black;">
+         <source src="sample-video.webm" type="video/webm">
+         <source src="sample-video.ogv" type="video/ogg">
+         <source src="sample-video.mp4" type="video/mp4">
+         <track src="subtitles-en.vtt" kind="subtitles" srclang="en" 
+                label="English" default/>
+         <track src="subtitles-fr.vtt" kind="subtitles" srclang="fr"
+                label="French"/>
+        </video>
+    </div>
+    <div>
+        <video poster='http://res.cloudinary.com/xgqfrms/video/upload/sample-video.jpg' style="width: 320;height: 280;background: black;">
+            <source src='http://res.cloudinary.com/xgqfrms/video/upload/sample-video.webm' type='video/webm'>
+            <source src='http://res.cloudinary.com/xgqfrms/video/upload/sample-video.mp4' type='video/mp4'>
+            <source src='http://res.cloudinary.com/xgqfrms/video/upload/sample-video.ogv' type='video/ogg'>
+        </video>
+    </div>
+    <script>
+        // upload in node.js
+        cloudinary.uploader.upload('sample-video.mp4', function(result) {
+          // Callback
+          console.log('result: ', result);
+        }, {
+          public_id: 'sample-video',
+          resource_type: 'video'
+        });
+        // cloudinary.video('sample-video');
+        // 
+        cloudinary.video('sample-video', {
+            width: 640,
+            height: 480,
+            autoplay: true,
+            poster: {
+                transformation: [
+                    { width: 1850, crop: "scale" },
+                    { overlay: "movie_curtain_overlay_new"},
+                    { overlay: "text:Courier_80_bold:Once%20upon%20a%20time...", 
+                    gravity:"north", y: 60 },
+                    { start_offset: 36 }
+                ]
+            }
+        })
+    </script>
 </body>
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>you know JavaScript?</title>
+    <!-- http://dmitry.baranovskiy.com/post/91403200 -->
+    <style>
+        .box h1{
+            text-shadow: 2px 2px 3px rgba(255,0,255,1);
+            color: #0f0;
+        }
+        .box h1:hover{
+            text-shadow: 5px 7px 10px rgba(0,0,0,0.3);;
+            transition: all 0.2s ease-out 0s;
+            /*font-size: 2em;*/
+            transform: scale(2) translate(350px,10px);
+        }
+        .code{
+            width: 400px;
+            height: auto;
+            /*background: rgba(0,255,0,1);*/
+        }
+        .code h3{
+            color: #0ff;
+        }
+        .code .code-js{
+            background: rgba(0,0,0,1);
+            color: #fff;
+            border-radius: 20px;
+            padding: 30px 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>So, you think you know JavaScript? </h1>
+        <p>
+            Quick test for real understanding of JavaScript core beyond closures and scopes. <br/>
+            快速测试超出封闭和范围的JavaScript核心的真正的理解。
+        </p>
+        <div class="code">
+            <h3>Test01</h3>
+            <pre class="code-js">
+                if (!("a" in window)) {
+                    var a = 1;
+                }
+                alert(a);
+            </pre>
+        </div>
+        <div class="code">
+            <h3>Test02</h3>
+            <pre class="code-js">
+                var a = 1,
+                    b = function a(x) {
+                        x && a(--x);
+                    };
+                alert(a);
+            </pre>
+        </div>
+        <div class="code">
+            <h3>Test03</h3>
+            <pre class="code-js">
+                function a(x) {
+                    return x * 2;
+                }
+                var a;
+                alert(a);
+            </pre>
+        </div>
+        <div class="code">
+            <h3>Test04</h3>
+            <pre class="code-js">
+                function b(x, y, a) {
+                    arguments[2] = 10;
+                    alert(a);
+                }
+                b(1, 2, 3);
+            </pre>
+        </div>
+        <div class="code">
+            <h3>Test05</h3>
+            <pre class="code-js">
+                function a() {
+                    alert(this);
+                }
+                a.call(null);
+            </pre>
+        </div>
+    </div>
+</body>
+</html>
