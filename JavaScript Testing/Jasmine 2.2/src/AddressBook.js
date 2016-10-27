@@ -30,4 +30,7 @@ AddressBook.prototype.deleteContact = function(index) {
 construct function ???
 
 ES 6 class
+
+https://firebase.google.com/docs/reference/js/firebase.database.Reference#push
+
 */
