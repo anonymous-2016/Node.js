@@ -1,9 +1,13 @@
+// google firebase free API ???
+
+// https://firebase.google.com/docs/reference/js/firebase.database.Reference#push
+
 function AddressBook(){
     this.contacts = [];
+    this.initialComplete = false;
 }
 
-
-AddressBook.prototype.getInitialContacts = function(cb) {
+AddressBook.prototype.getInitialContact = function(cb) {
     var self = this;
     setTimeout(function(){
         self.initialComplete = true;
@@ -24,7 +28,6 @@ AddressBook.prototype.getContact = function(index) {
 AddressBook.prototype.deleteContact = function(index) {
     this.contacts.splice(index, 1);
 }
-
 
 /*
 construct function ???
