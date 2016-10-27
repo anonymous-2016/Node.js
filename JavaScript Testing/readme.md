@@ -92,6 +92,10 @@ Mike 的解决方案
 
 
 Jasmine 简介
+
+[Jasmine 2.5 docs ](http://jasmine.github.io/2.5/introduction)
+
+
 使用以下命令为课程的开始 
 [克隆资源库：](https://github.com/udacity/ud549)
 
