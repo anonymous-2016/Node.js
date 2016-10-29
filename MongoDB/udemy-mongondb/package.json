@@ -1,0 +1,24 @@
+{
+  "name": "books-database",
+  "version": "1.0.1",
+  "description": "MongoDB + mongoose + express + Postman",
+  "main": "app.js",
+  "scripts": {
+    "test": "book"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "express",
+    "node.js",
+    "postman",
+    "react"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.5"
+  }
+}
