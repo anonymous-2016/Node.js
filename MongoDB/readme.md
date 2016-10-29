@@ -156,6 +156,7 @@ net start MongoDB
 net stop MongoDB
 
 
+*********************************************************
 
 db.CollectionName.find()
 
@@ -163,3 +164,24 @@ db.CollectionName.find().pretty()
 
 
 # [mongo Shell Methods](https://docs.mongodb.com/manual/reference/method/)
+
+Collection
+Cursor
+Database
+Query Plan Cache
+Bulk Write Operation
+User Management
+Role Management
+Replication
+Sharding
+Subprocess
+Constructors
+Connection
+Native
+
+
+# [Database Commands](https://docs.mongodb.com/manual/reference/command/)
+
+
+# [Operators](https://docs.mongodb.com/manual/reference/operator/)
+
