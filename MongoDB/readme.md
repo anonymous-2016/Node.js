@@ -154,3 +154,12 @@ mongod --dbpath ./folder_name
 
 net start MongoDB
 net stop MongoDB
+
+
+
+db.CollectionName.find()
+
+db.CollectionName.find().pretty()
+
+
+# [mongo Shell Methods](https://docs.mongodb.com/manual/reference/method/)

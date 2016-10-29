@@ -1,0 +1,1 @@
+# [Frequently Asked Questions](https://docs.mongodb.com/manual/faq/)
