@@ -32,8 +32,11 @@ db.student.find({units: {$gt: 6}})
 db.student.find({units: {$lt: 7}})
 db.student.find({classes: {$in: ['history']}})
 
-db.student.find({classes: {$in: ['history']}}).sort({units: -1})    // ascending
-db.student.find({}).sort({name: 1})    // descending
+db.student.find({classes: {$in: ['history']}}).sort({units: 1})    
+// ascending 1 
+
+db.student.find({}).sort({units: -1})   
+// descending -1
 
 db.student.find({}).sort({name: 1}).limit(2)
 
