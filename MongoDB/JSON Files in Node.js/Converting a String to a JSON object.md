@@ -1,14 +1,18 @@
 # 将字符串转换为JSON对象
 
 
-> The code associated with using the built-in global JSON Object for parsing a string containing JSON data is shown below:
+> 使用内置的全局JSON对象来解析包含JSON数据的字符串的代码如下所示:
 
 ```js
-var string = "{'key':'value'}";
+// var string = "{'key1': 'abc', key2: 'xyz, 'key3': '333', key4: 444}";
+// error: 字符串，格式不标准
+
+
+var string = '{"key1":"abc","key2":"xyz","key3":"333","key4":444}';
 
 var obj = JSON.parse(string);
 
-console.log(obj.key);
+console.log(obj);
 
 ``` 
 
@@ -17,10 +21,14 @@ console.log(obj.key);
 
 
 ```js
-var string = "{'key':'value'}";
+// var string = "{'key1': 'abc', key2: 'xyz, 'key3': '333', key4: 444}";
+// error: 字符串，格式不标准
 
-var obj = JSON.parse(trim(string));
 
-console.log(obj.key);
+var string = '{"key1":"abc","key2":"xyz","key3":"333","key4":444}';
+
+var obj = JSON.parse(string.trim());
+
+console.log(obj);
 
 ``` 

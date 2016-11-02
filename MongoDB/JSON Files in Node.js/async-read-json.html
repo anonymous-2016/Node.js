@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Async read JSON</title>
+</head>
+<body>
+    <div>
+        <h1>Error: node fs </h1>
+        <a href="https://www.npmjs.com/package/jsonfile">https://www.npmjs.com/package/jsonfile</a>
+    </div>
+    <script>
+        // Read Asynchrously
+        // D:\NodeJs>node readAsync.js
+
+        // Define JSON File
+        var fs = require("fs");
+        console.log("***STARTING***\n");
+        //Get content from file
+        var contents = fs.readFile('dummy.json', 'utf8', function(err, data) {
+            if (err) throw err;
+            console.log("data =" + data);
+        });
+        // Define to JSON type
+        var jsonContent = JSON.parse(contents);
+        // Get Value from JSON
+        console.log("User Name:", jsonContent.username);
+        console.log("Email:", jsonContent.email);
+        console.log("Password:", jsonContent.password);
+        console.log("\n***EXIT***");
+    </script>
+</body>
+</html>
