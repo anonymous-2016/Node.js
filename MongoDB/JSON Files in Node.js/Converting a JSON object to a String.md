@@ -1,4 +1,4 @@
-# Converting a JSON object to a String
+# 将JSON对象转换为字符串
 
 > You can opt for the ‘stringify‘ method for converting the JSON object into a string data as shown below:
 

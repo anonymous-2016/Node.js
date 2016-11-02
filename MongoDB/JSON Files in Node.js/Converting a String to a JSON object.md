@@ -1,4 +1,4 @@
-# Converting a String to a JSON object
+# 将字符串转换为JSON对象
 
 
 > The code associated with using the built-in global JSON Object for parsing a string containing JSON data is shown below:

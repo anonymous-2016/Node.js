@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blink</title>
+</head>
+<body>
+    <div >
+        <h1>blink: Deprecated 已弃用</h1>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/blink">String.prototype.blink()</a>
+        <!-- override all ? -->
+        <a href="http://stackoverflow.com/questions/14429061/html5-shim-vs-shiv">HTML5 Shim vs. Shiv</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim">Trim Polyfill</a>
+        <a href="http://blog.csdn.net/wang16510/article/details/8960312">HTML5 tips：深入了解Polyfills</a>
+        <a href="">Modernizr </a>
+        <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">HTML5 Cross Browser Polyfills</a>
+    </div>
+    <hr />
+    <div id="div">
+        <h1>blink: Deprecated 已弃用</h1>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/blink">String.prototype.blink()</a>
+        <!-- override all ? -->
+    </div>
+    <hr />
+    <div>
+        <pre>
+            document.write("&lt;/body>"); 
+            <mark>在闭合的body元素前面插入内容</mark>
+        </pre>
+        <hr />
+        <pre>
+            document.getElementById('div').innerHTML = "&div id="div">";
+            <mark>覆盖选择器的所有元素,插入新的内容</mark>
+        </pre>
+    </div>
+    <script>
+        var worldString = 'Hello, world';
+        var b = worldString.blink();
+        // document.write(b);
+        // console.log(b);
+        document.write("<hr/>");
+        var target = document.getElementById('div').innerHTML = worldString.blink();
+        document.write(target+"???");
+    </script>
+</body>
+</html>
