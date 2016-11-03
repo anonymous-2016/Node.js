@@ -41,3 +41,28 @@ Setting a new locale is simple:
 // sets locale to de 
 faker.locale = "zh_CN";
 Read further for complete list of locales.
+
+
+
+## Quick Tip: Mock REST APIs Using json-server
+
+[Generating Mock Data for Your API](https://www.sitepoint.com/mock-rest-apis-using-json-server/)
+
+```js
+var faker = require('faker');
+
+var db = { movies: [] };
+
+// 1000
+for (var i=1; i<=100; i++) {
+    db.movies.push({
+        id: i,
+        name: faker.random.words(),
+        director: faker.name.firstName() + ' ' + faker.name.lastName(),
+        rating: Math.floor(Math.random()*100+1)/10
+    });
+}
+
+console.log(JSON.stringify(db));
+``` 
+
