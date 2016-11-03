@@ -132,10 +132,36 @@ $ curl -X GET http://localhost:3000/movies
 
 ```bash
 $ curl -X POST -H "Content-Type: application/json" -d '{"id": 3, "name": "Inception", "director": "Christopher Nolan", "rating": 9.0}' http://localhost:3000/movies
- 
+//error
 
+Content-Type application/json
+
+## 可以不使用id, 它会自动分配的！
+
+{"id": 3, "name": "Inception", "director": "Christopher Nolan", "rating": 9.0}
+//OK
+
+{"name": "Inception", "director": "Christopher Nolan", "rating": 9.0}
+// OK
+
+'{"name": "Inception", "director": "Christopher Nolan", "rating": 9.0}'
+// error
+``` 
+
+## json-server
+```bash
+json-server -w db.json
+json-server --watch db.json
+``` 
+
+## curl.exe path
+```bash
+$ curl -X GET http://localhost:3000/movies
+
+$ curl -X GET "http://localhost:3000/movies"
 
 ``` 
+
 
 
 
