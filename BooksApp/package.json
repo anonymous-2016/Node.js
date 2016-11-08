@@ -1,0 +1,31 @@
+{
+  "name": "books-app",
+  "version": "1.0.1",
+  "description": "BooksApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/Node.js.git"
+  },
+  "keywords": [
+    "Node",
+    "BooksApp",
+    "MongoDB",
+    "Express"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/Node.js/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/Node.js#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "moment": "^2.15.2",
+    "mongoose": "^4.6.6"
+  }
+}
