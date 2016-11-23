@@ -10,5 +10,5 @@ app.listen(port, function() {
 
 // route our app
 app.get('/', function(req, res) {
-  res.send('hello express!');
+    res.send('hello express! <mark>nodemon local path tets OK!</mark>');
 });
