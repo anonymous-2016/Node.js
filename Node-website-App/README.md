@@ -12,17 +12,9 @@ Full project for the Build a Website with Node course.
 
 
 
-
-
-
-
-
-
-
-
 ## Course Videos
 
-[Watch the first three lessons free](https://school.scotch.io/build-a-nodejs-website)
+[Watch the lessons free](https://school.scotch.io/build-a-nodejs-website)
 
     "body-parser": "^1.15.2",
     "ejs": "^2.5.1",
@@ -38,9 +30,6 @@ $ npm i -S express ejs express-ejs-layouts nodemon body-parser
     "express": "^4.14.0",
     "express-ejs-layouts": "^2.2.0",
 "nodemon": "^1.11.0"
-
-
-
 
 
 
@@ -62,8 +51,18 @@ $ npm install -g nodemon
 
 
 
+/*
+ejs 应该在 router 前面，防止 error！
+*/
 
 
+# define
+<%- defineContent('hero') %>
 
+# use
+<%- contentFor('hero') %>
+
+
+<!-- ejs -->
 
 

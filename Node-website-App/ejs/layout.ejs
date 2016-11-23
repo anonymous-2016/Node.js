@@ -21,27 +21,12 @@
         </nav>
     </header>
     <main>
-        <section class="hero container-fluid">
-            <div class="hero-content">
-                <h1>main comtent</h1>
-                <div>
-                    <ul class="list-inline">
-                        <li><a href="/home">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </div>
-                <p>
-                    <span class="btn">
-                        btn
-                    </span>
-                </p>
-            </div>
+        <section>
+            <!-- main -->
+            <%- defineContent('hero') %>
         </section>
-        <section class="section-css">
-            <div class="jumbotron text-center h1">
-                jumbotron:超大屏幕
-            </div>
+        <section>
+            <%- defineContent('cbody') %>
         </section>
     </main>
     <footer class="container-fluid">
