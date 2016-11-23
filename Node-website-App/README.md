@@ -66,3 +66,14 @@ ejs 应该在 router 前面，防止 error！
 <!-- ejs -->
 
 
+
+# body-parser
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
+
+
+
+
+

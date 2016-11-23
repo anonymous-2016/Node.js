@@ -28,7 +28,8 @@ router.get('/contact', function(req, res) {
 });
 
 router.post('/contact', function(req, res) {
-   res.render('ejs/contact'));
+   // res.render('ejs/contact'));
+   console.log(req.body.message);
 });
 
 
