@@ -90,7 +90,13 @@ Tags
 # Trim-mode ('newline slurp') tag, trims following newline
 ``` 
 
+## layout.ejs  (both OK)
 
+<%- defineContent('hero') %>
+<%- defineContent('cbody') %>
+
+<%- defineContent('hero') %>
+<%- cbody %>
 
 
 # body-parser
