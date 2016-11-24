@@ -1,0 +1,82 @@
+body{
+    font-family: ;
+    font-size: 16px;
+    /*rem em base-size*/
+    line-height: 1.5;
+}
+
+header .navbar{
+    border-radius: 0;
+    margin: 0;
+}
+
+main{
+    margin: 1px 0 !important;
+    min-height: 500px;
+    padding: 0;
+    /*???*/
+    /*
+    <main class="container-fluid"></main>
+    消除 bootstrap 无法全屏的解决方案:
+    改为内层盒子加样式，header,main, footer, 应该完全有自己控制！
+    <main>
+        <section class="container-fluid"></section>
+    </main>
+    */
+}
+
+.section-css{
+    padding: 50px 0;
+    min-height: 500px;
+}
+footer{
+    padding: 30px 0;
+    font-size: 14px;
+    color: #bbb;
+    background: #222;
+    text-align: center;
+}
+
+.hero{
+    background: url(/img/planet.jpg) center no-repeat;
+    background-size: cover;
+    /*???*/
+    padding: 10px 0;
+    min-height: 500px;
+    position: relative;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-content h1{
+    color: #0f0;
+    font-size: 3rem;
+}
+
+.hero-content p{
+    color: #0f0;
+    font-size: 2rem;
+}
+
+.hero-content .btn{
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-size: 3rem;
+    background: #f0f;
+}
+
+.section-body{
+    margin: 10px 50px;
+    /*width: 80%;*/
+}
+.section-body .section-css{
+    border: 1px solid red;
+    padding: 50px;
+}
+
+

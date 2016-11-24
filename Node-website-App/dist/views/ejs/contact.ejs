@@ -1,0 +1,72 @@
+<%- contentFor('hero') %>
+
+<section class="hero container-fluid">
+    <div class="hero-content">
+        <h1>contact comtent</h1>
+        <div>
+            <ul class="list-inline">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <p>
+            <span class="btn">
+                btn
+            </span>
+        </p>
+    </div>
+</section>
+
+<%- contentFor('cbody') %>
+
+<section class="section-css">
+    <div class="jumbotron text-center h1">
+        jumbotron:超大屏幕
+    </div>
+    <div class="row">
+        <form action="http://www.xgqfrms.xyz/test.php" method="POST" enctype="multipart/form-data">
+            <label for="">name: </label><br>
+            <input type="text" placeholder="username">
+            <br>
+            <label for="">email</label><br>
+            <input type="email" placeholder="xgqfrms@email.xyz">
+            <hr>
+            <hr>
+            <div class="form-group">
+                <label for="">name</label>
+                <input type="text" placeholder="username" name="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">password</label>
+                <input type="password" placeholder="*******" name="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">date</label>
+                <input type="datetime" placeholder="date" name="datetime" class="form-control">
+            </div>
+            <div class="form-group text-right">
+                <input type="submit" value="submit" class="btn btn-primary btn-lg">
+                <button type="submit" class="btn btn-primary btn-lg"> submit button </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- form post content type-->
+
+<!-- 
+content-type multipart/form-data
+application/x-www-form-urlencoded  
+enctype="multipart/form-data"
+
+https://www.w3.org/TR/html401/interact/forms.html
+
+POST, Content-Type ,HTTP, enctype="multipart/form-data"
+
+https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Type
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type
+
+ -->
+
