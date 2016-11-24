@@ -6,15 +6,15 @@ var router  = express.Router();
 //export router
 module.exports = router;
 
-// route for app index
+// route for app index URL path
 router.get('/', function(req, res) {
-    // __dirname === root dir
-    res.render('ejs/index'));
+    // __dirname === root dir ??? === views folder (real path)
+    res.render('ejs/index');
 });
 
 // route for app home
 router.get('/home', function(req, res) {
-    res.render('ejs/home'));
+    res.render('ejs/home');
 });
 
 // route for app index
@@ -26,19 +26,19 @@ router.get('/about', function(req, res) {
         { name: 'Ado', email: 'Ado@xgqfrms.xyz', avatar: 'http://placekitten.com/500/500'},
         { name: 'Samantha', email: 'Samantha@xgqfrms.xyz', avatar: 'http://placekitten.com/700/700'}
     ];
-    res.render('ejs/about'));
+    res.render('ejs/about', { users: users });
 });
 
 // route for app index
 router.get('/contact', function(req, res) {
-    res.render('ejs/contact'));
+    res.render('ejs/contact');
 });
 
 router.post('/contact', function(req, res) {
-   // res.render('ejs/contact'));
+   // res.render('ejs/contact');
    console.log(req.body.message);
    // server respond action
-   res.send('thanks for subscribe this website! ' + req.body.name +' we will respond shortly!'));
+   res.send('thanks for subscribe this website! ' + req.body.name +' we will respond shortly!');
 });
 
 

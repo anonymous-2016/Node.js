@@ -5,15 +5,14 @@ var port = process.env.PORT || 3000;
 
 // require express-ejs-layouts
 var expressLayouts = require('express-ejs-layouts');
-// var ejs = require('ejs');
 
 // require body-parser
 var bodyParser = require('body-parser');
 
-// use require 
+// use body-parser ??? urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
+// ??? var ejs = require('ejs');  views folder ???
 // set & use ejs
 app.set('view engine', 'ejs');
 // use express-ejs-layouts
@@ -25,11 +24,11 @@ ejs 应该在 router 前面，防止 error！
 */
 
 // route app with app-router.js
-var router = require('./app/app-router');
+var router = require('./app/app-router-with-data');
 app.use('/', router);
 
 // set static file(css,img) realtive path for view pages
-app.use(express.static(__dirname + '/public');
+app.use(express.static(__dirname + '/public'));
 
 // start the server
 app.listen(port, function() {
