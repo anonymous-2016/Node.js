@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<title>Demo Socket.IO </title> 
+<meta charset="utf-8" />
+<script src="socket_io.js"></script>
+<script>
+var socket = io.connect();
+//socket.emit('feedback','this content from client');
+socket.on('news', function (data) {
+console.log(data);
+document.getElementById('newsContent').innerHTML = data.content;
+socket.emit('feedback', 'from client - ' + new Date());
+});
+99
+Explanation
+    First, we include Socket.io.js
+    Instantiate the socketio object.
+    Call on() to wait for the 'news' event from the server.
+    If the client gets the data, socketio will send data to the server by calling emit()
+To run the application, we must run the server file:
+Now open the browser and write the URL http://localhost:8098/
+Here is a sample program output for the server side:
+Server side of Socket.io app  Figure 75:
+Here is a sample program output for the browser. Activate the browser console to see incoming
+data from the server.
+</script>
+</head>
+<body>
+<span id='newsContent'></span>
+</body>
+</html>
